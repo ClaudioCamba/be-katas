@@ -1,13 +1,12 @@
-const createRef = (peopleArray) => {
+const createRef = (peopleArray, key = 'name', val = 'phoneNumber' ) => {
     const people = {};
     peopleArray.forEach(person => {
-        const name = person.hasOwnProperty('name');
-        const number = person.hasOwnProperty('phoneNumber');
-        if (name && number) people[person.name] = person.phoneNumber;
+        const objKey = person.hasOwnProperty(key);
+        const objValue = person.hasOwnProperty(val);
+        if (objKey && objValue) people[person[key]] = person[val];
     });
 
     return people;
 };
 
 module.exports = createRef;
- 
