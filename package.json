@@ -4,7 +4,7 @@
   "description": "Katas",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest week_2_katas/__tests__/supermarket-queue"
   },
   "repository": {
     "type": "git",
