@@ -4,7 +4,7 @@
   "description": "Katas",
   "main": "index.js",
   "scripts": {
-    "test": "jest week_2_katas/__tests__/supermarket-queue"
+    "test": "jest week_2_katas/__tests__/find-closing-parenthesis"
   },
   "repository": {
     "type": "git",
